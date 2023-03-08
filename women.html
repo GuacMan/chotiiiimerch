@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="favicon_io/favicon.ico">
+	<title>Women's Clothing | Love Theme</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+	<style>
+		/* Global Styles */
+
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		body {
+			background-color: #ff99cc;
+			color: #fff;
+			font-family: Arial, sans-serif;
+		}
+
+		header {
+			background-color: #ff6699;
+			padding: 20px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+
+		nav {
+			margin-bottom: 10px;
+		}
+
+		nav ul {
+			list-style: none;
+			display: flex;
+		}
+
+		nav li {
+			margin-right: 20px;
+		}
+
+		nav a {
+			color: #fff;
+			text-decoration: none;
+		}
+
+		nav a:hover {
+			color: #ff6699;
+		}
+
+		h1 {
+			margin-top: 20px;
+			font-size: 36px;
+			text-transform: uppercase;
+			letter-spacing: 4px;
+			text-align: center;
+		}
+
+		section {
+			padding: 50px;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
+
+		h2 {
+			margin-bottom: 30px;
+			font-size: 24px;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+			color: #ff6699;
+			text-align: center;
+			width: 100%;
+		}
+
+		.image {
+			position: relative;
+			width: 30%;
+			margin-bottom: 30px;
+			background-color: #fff;
+		}
+
+		.image img {
+			display: block;
+			width: 100%;
+			height: auto;
+		}
+
+		.popup {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			opacity: 0;
+			visibility: hidden;
+			padding: 20px;
+			background-color: #ff99cc;
+			color: #fff;
+			text-align: center;
+			transition: all 0.5s ease;
+		}
+
+		.popup p {
+			margin-top: 10px;
+			font-size: 18px;
+			font-weight: bold;
+			color: #fff;
+			text-transform: uppercase;
+		}
+
+		.popup.active {
+			opacity: 1;
+			visibility: visible;
+		}
+
+		.caption {
+			display: block;
+			font-size: 18px;
+			margin-bottom: 10px;
+			font-weight: bold;
+			color: #fff;
+			text-align: center;
+			text-transform: uppercase;
+		}
+
+		/* Women's Clothing Page Specific Styles */
+
+		h1 {
+			color: #fff;
+		}
+
+		nav a {
+			color: #fff;
+		}
+
+		nav a:hover {
+			color: #ff6699;
+        }
+        body {
+			background-color: #ff99cc;
+		}
+
+		header {
+			background-color: #ff6699;
+		}
+
+		h2 {
+			color: #fff;
+			text-align: center;
+			margin-top: 50px;
+			margin-bottom: 50px;
+		}
+
+		.image {
+			background-color: #ff6699;
+			color: #fff;
+			transition: all 0.5s ease;
+			box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+		}
+
+		.image:hover {
+			background-color: #fff;
+			color: #ff6699;
+			box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+		}
+
+		.popup {
+			background-color: #ff6699;
+		}
+
+		.popup p {
+			color: #fff;
+		}
+
+		.caption {
+			color: #3E54AC;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Women's Clothing | Love Theme</h1>
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="men.html">Men</a></li>
+				<li><a href="women.html">Women</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<section>
+		<h2>My Featured Products</h2>
+
+		<div class="image">
+			<img src="mistyyy/23491006-64F1-4146-84E7-C198443F794D.JPG" alt="Product 1">
+			<div class="popup">
+				<p>Product Mistyyyy</p>
+				<span class="caption">This gem this cute existence has the most honarary mention in this entire website she is raihas existence and probably biggest support throughout her years, may i be up there with misty too always supporting you and being a shoulder you can len and trust.</span>
+			</div>
+		</div>
+
+		<div class="image">
+			<img src="pics/IMG_8315.PNG" alt="Product 2">
+			<div class="popup">
+				<p>Product Lahore Qalandars</p>
+				<span class="caption">Now for the real messages, i know these might be repetitive but these last 4 pictures are messages that i mean from the bottom off my heart and with pure love. </span>
+			</div>
+		</div>
+
+		<div class="image">
+			<img src="pics/5EB58E64-1E3B-4B1A-8159-ED36C3C9CFAD.JPG" alt="Product 3">
+			<div class="popup">
+				<p>Product Ms Pointer</p>
+				<span class="caption">Here is this um poem message paragraph whatever i wrote for you, my biggest issue and problem with you raiha is honestly if you wanted to dance i would let you wreck allll the furniture, if you wanted to cook iwould let you burn down the house, if you wanted to scream i would let you deafen me and make my ears bleed, ive honestly never loved anyone enough to let them destroy me but YA ALLAH you could take me by the throat and my eyes would shine and glimmer JUST CAUSE OF HOW CLOSE WE ARE</span>
+			</div>
+		</div>
+
+		<div class="image">
+			<img src="pics/8988D455-F69C-49A9-9446-52B082E94C3B.JPG" alt="Product 4">
+			<div class="popup">
+				<p>Product Roohi</p>
+				<span class="caption">Roohi wallahi i love yuo so much and i want to be there for you till the end of time, you mean the whole world to me these phrases i often say to you arent meant to cover up or embellish any hidden intention, but they have always been pure and deep from my heart, as i would like to say. the infinitude of the human language can never capture the infinitude of my love for you, youd expect infinitude to capture infinitude, but this just proves that some infinities are larger than the other...</span>
+			</div>
+		</div>
+
+		<div class="image">
+			<img src="pics/AEDBB4C4-9D3B-400F-8680-41D20AFE21BE.JPG" alt="Product 5">
+			<div class="popup">
+				<p>Product Hottie</p>
+				<span class="caption">if jannah was a flower, id pick it for you, if jannah was a place id take you to it, but jannah is something no one can see so i will always make special dua to Allah to reserve a place for you, since the start you have been the woman in my duas ive always had you in my mind every single prayer, to get closer to you to get you to like me more and just a multitude of blessings for you, as you have lessed me in ways unimagineable being such a prominent and important person in my life, and i will forever owe you.</span>
+			</div>
+		</div>
+
+		<div class="image">
+			<img src="pics/1801E8FC-7985-42CF-A977-82B98F645D9C.JPG" alt="Product 6">
+            <div class="popup">
+                <p>Product We Should Date Fr</p>
+                <span class="caption">roohi to close this all off, yaar i truly adore you and im so glad you came into my life wallahi i wouldnt trade it for anyone in the world, youre the sweetest most loveable thing that came into my life, wallahi youre the reason im so content and happy, you give me a reason to smile and laugh everyday, even if you do beat me up everyday, i love you roohi and youre irreplaceable to me, i wish you the best 18th birthday and inshallah this will be your year, ik it will i believe in you roohi, youre a special girl and you truly have half off my heart, im clinacly obssessed with you, but anyways im always going to be here for you roohi and i absolutely love you, Take care meri jaan.</span>
+            </div>
+         </div>
+    </section>
+    <footer>
+        <p>&copy; 2023 Clothing Brand</p>
+    </footer>
+    
+    <script>
+        // Popup
+        const images = document.querySelectorAll('.image');
+        const popup = document.querySelector('.popup');
+    
+        images.forEach((image) => {
+            const popupText = image.querySelector('.popup');
+    
+            image.addEventListener('mouseover', () => {
+                popupText.classList.add('active');
+            });
+    
+            image.addEventListener('mouseout', () => {
+                popupText.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>    

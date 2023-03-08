@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="favicon_io/favicon.ico">
+	<title>Mens Clothing | Cool Theme</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+	<style>
+		/* Global Styles */
+
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		body {
+			background-color: #ff99cc;
+			color: #fff;
+			font-family: Arial, sans-serif;
+		}
+
+		header {
+			background-color: #ff6699;
+			padding: 20px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+
+		nav {
+			margin-bottom: 10px;
+		}
+
+		nav ul {
+			list-style: none;
+			display: flex;
+		}
+
+		nav li {
+			margin-right: 20px;
+		}
+
+		nav a {
+			color: #fff;
+			text-decoration: none;
+		}
+
+		nav a:hover {
+			color: #ff6699;
+		}
+
+		h1 {
+			margin-top: 20px;
+			font-size: 36px;
+			text-transform: uppercase;
+			letter-spacing: 4px;
+			text-align: center;
+		}
+
+		section {
+			padding: 50px;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
+
+		h2 {
+			margin-bottom: 30px;
+			font-size: 24px;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+			color: #ff6699;
+			text-align: center;
+			width: 100%;
+		}
+
+		.image {
+			position: relative;
+			width: 30%;
+			margin-bottom: 30px;
+			background-color: #fff;
+		}
+
+		.image img {
+			display: block;
+			width: 100%;
+			height: auto;
+		}
+
+		.popup {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			opacity: 0;
+			visibility: hidden;
+			padding: 20px;
+			background-color: #ff99cc;
+			color: #fff;
+			text-align: center;
+			transition: all 0.5s ease;
+		}
+
+		.popup p {
+			margin-top: 10px;
+			font-size: 18px;
+			font-weight: bold;
+			color: #fff;
+			text-transform: uppercase;
+		}
+
+		.popup.active {
+			opacity: 1;
+			visibility: visible;
+		}
+
+		.caption {
+			display: block;
+			font-size: 18px;
+			margin-bottom: 10px;
+			font-weight: bold;
+			color: #fff;
+			text-align: center;
+			text-transform: uppercase;
+		}
+
+		/* Women's Clothing Page Specific Styles */
+
+		h1 {
+			color: #1c1c1c;
+		}
+
+		nav a {
+			color: #1c1c1c;
+		}
+
+		nav a:hover {
+			color: #22A39F;
+        }
+        body {
+			background-color: #222222;
+		}
+
+		header {
+			background-color: #E2DCC8;
+		}
+
+		h2 {
+			color: #fff;
+			text-align: center;
+			margin-top: 50px;
+			margin-bottom: 50px;
+		}
+
+		.image {
+			background-color: #22A39F;
+			color: #fff;
+			transition: all 0.5s ease;
+			box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+		}
+
+		.image:hover {
+			background-color: #fff;
+			color: #ff6699;
+			box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+		}
+
+		.popup {
+			background-color: #22A39F;
+		}
+
+		.popup p {
+			color: #f6f6f6;
+		}
+
+		.caption {
+			color: #434242;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Men's Clothing | Hot Theme</h1>
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="men.html">Men</a></li>
+				<li><a href="women.html">Women</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<section>
+		<h2>Our Featured Products</h2>
+
+		<div class="image">
+			<img src="dylan/IMG_0811.jpg" alt="Product 1">
+			<div class="popup">
+				<p>Product First Day</p>
+				<span class="caption">Now this is the beautiful page of Raiha's mans over the period of time, at first we got dylan ofcourse cant ever forget him, this masterpiece of a man comes at a price that is priceless, he has been there since day 1 just like you have been my day 1, and im so glad that it was you.</span>
+			</div>
+		</div>
+
+		<div class="image">
+			<img src="Bale/IMG_0803.jpg" alt="Product 2">
+			<div class="popup">
+				<p>Product Batman</p>
+				<span class="caption">Bale, now how can we ever stop talking about him, this man this beauty has and still is on the mind of your precious smol pretty head, he may be batman but ong youre the real batman over here! </span>
+			</div>
+		</div>
+
+		<div class="image">
+			<img src="michele/IMG_0816.jpg" alt="Product 3">
+			<div class="popup">
+				<p>Product Old Piece</p>
+				<span class="caption">What can we say old love, he was truly a specimen back in your prime michele days but yet some fade away, like the many ppl in our lives yet we have stuck together since the start and goddamn do i appreciate you for it every living second.</span>
+			</div>
+		</div>
+
+		<div class="image">
+			<img src="wedding pic/DBC6945E-0B77-4145-BE7A-9AAED989D4AA.JPG" alt="Product 4">
+			<div class="popup">
+				<p>Product Choti Wedding</p>
+				<span class="caption">Ah yes the og wedding pics, back when you were chronically obssesed with dylan, the way im obssessed with you now, so perfect so funny so goddamn pretty you make me fold to this day....</span>
+			</div>
+		</div>
+
+		<div class="image">
+			<img src="pics/IMG_2256.JPG" alt="Product 5">
+			<div class="popup">
+				<p>Product Your Man</p>
+				<span class="caption">This now this is a masterpiece your main man/your lover/your ex/your mc husband/ your irl husband inshallah/ what a specimen he is truly a beauty, and goddamn am i so blessed and lucky to have you meri jaan.  </span>
+			</div>
+		</div>
+
+		<div class="image">
+			<img src="pics/lee pace.jpeg" alt="Product 6">
+            <div class="popup">
+                <p>Product Lee</p>
+                <span class="caption">Lee pace while theres not much you can say about him his craze was short lived yet it was so impactful to this day you fold to him, just like me when i played badminton with you today, truly this just shows how we are so linked together through everything... </span>
+            </div>
+         </div>
+    </section>
+    <footer>
+        <p>&copy; 2023 Clothing Brand</p>
+    </footer>
+    
+    <script>
+        // Popup
+        const images = document.querySelectorAll('.image');
+        const popup = document.querySelector('.popup');
+    
+        images.forEach((image) => {
+            const popupText = image.querySelector('.popup');
+    
+            image.addEventListener('mouseover', () => {
+                popupText.classList.add('active');
+            });
+    
+            image.addEventListener('mouseout', () => {
+                popupText.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>    

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lil Chotiii Merch Homepage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		body {
+			background-color: #F9F9F9;
+			font-family: Arial, sans-serif;
+			font-size: 16px;
+			line-height: 1.5;
+			margin: 0;
+			padding: 0;
+		}
+
+		header {
+			background-color: #FFFFFF;
+			border-bottom: 1px solid #CCCCCC;
+			padding: 20px;
+		}
+
+		h1 {
+			font-size: 36px;
+			font-weight: bold;
+			margin: 0;
+		}
+
+		nav {
+			background-color: #333333;
+			color: #FFFFFF;
+			padding: 20px;
+		}
+
+		nav ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+
+		nav li {
+			display: inline-block;
+			margin-right: 20px;
+		}
+
+		nav a {
+			color: #FFFFFF;
+			text-decoration: none;
+			transition: color 0.2s;
+		}
+
+		nav a:hover {
+			color: #CCCCCC;
+		}
+
+		section {
+			display: flex;
+			flex-wrap: wrap;
+			margin: 20px;
+		}
+
+		.item {
+			background-color: #FFFFFF;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+			margin: 10px;
+			padding: 20px;
+			position: relative;
+			text-align: center;
+			transition: transform 0.2s;
+			width: 250px;
+		}
+
+		.item:hover {
+			transform: translateY(-10px);
+		}
+
+		.item img {
+			display: block;
+			margin: 0 auto;
+			max-width: 100%;
+		}
+
+		.item h2 {
+			font-size: 24px;
+			font-weight: bold;
+			margin: 0;
+			margin-top: 10px;
+		}
+
+		.item p {
+			margin: 10px 0 0 0;
+		}
+
+		.item .overlay {
+			background-color: rgba(0, 0, 0, 0.5);
+			color: #FFFFFF;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			left: 0;
+			position: absolute;
+			top: 0;
+			height: 100%;
+			width: 100%;
+			opacity: 0;
+			transition: opacity 0.2s;
+		}
+
+		.item:hover .overlay {
+			opacity: 1;
+		}
+
+		.item .overlay p {
+			font-size: 18px;
+			margin: 0;
+			padding: 10px;
+			text-align: center;
+		}
+	</style>
+	<script>
+		// JavaScript code to handle hover text
+		window.onload = function() {
+			var items = document.getElementsByClassName("item");
+			for (var i = 0; i < items.length; i++) {
+				items[i].addEventListener("mouseover", function() {
+					this.getElementsByClassName("overlay")[0].style.opacity = "1";
+				});
+				items[i].addEventListener("mouseout", function() {
+					this.getElementsByClassName("overlay")[0].style.opacity = "0";
+                });
+			}
+		};
+	</script>
+</head>
+<body>
+	<header>
+		<h1>District | 74</h1>
+	</header>
+	<nav>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="men.html">Men</a></li>
+			<li><a href="women.html">Women</a></li>
+		</ul>
+	</nav>
+	<section>
+		<div class="item">
+			<img src="pics/IMG_8338.JPG" alt="Item 1">
+			<h2>Choti 1</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+			<div class="overlay">
+				<p>What is today? Let me tell you ITS YOUR MFING BIRTHDAY! YOURE FINALLY GODDAMN 18 YOU TINY SMOL CHILD, istg if you read this shit tomorrow.
+
+                </p>
+			</div>
+		</div>
+		<div class="item">
+			<img src="pics/ED586A8B-8E34-4122-BE25-A44A8302FD30.JPG" alt="Item 2">
+			<h2>Choti 2</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+			<div class="overlay">
+				<p>But in anycase id like to present you this website i made for you, to officilize the lil chotiii merch site. I hope you enjoy!</p>
+			</div>
+		</div>
+		<div class="item">
+			<img src="pics/IMG_2674.PNG" alt="Item 3">
+			<h2>Choti 3</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+			<div class="overlay">
+				<p>Also goddamn you so old now yet still even with age youre quite cute, im so proud of you for everything youve accomplished over the years(hoping to kick in some of your daddy issues!)
+                </p>
+			</div>
+		</div>
+		<div class="item">
+			<img src="pics/milk.jpeg" alt="Item 4">
+			<h2>Milk</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+			<div class="overlay">
+				<p>Also how you gonna be 18 but not even 5ft thats a skill issue, personally i wouldnt take that, so here take some milk.</p>
+			</div>
+		</div>
+	</section>
+</body>
+</html>
